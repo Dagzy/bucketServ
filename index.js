@@ -9,7 +9,7 @@ const cors = require('cors');
 var mongoose = require('mongoose');
 
 //DB connection
-mongoose.connect('mongodb://localhost:bucket/bucket');
+mongoose.connect('mongodb://admin:admin@ds121483.mlab.com:21483/bucketlist');
 app.use(cors());
 //Middleware
 app.use(bodyParser.json({type:'*/*'}));
